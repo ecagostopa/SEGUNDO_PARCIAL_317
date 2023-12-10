@@ -1,0 +1,470 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable
+  DTS:refId="Package" xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:CreatorName="DESKTOP-ITKER80\carol"
+  DTS:CreatorComputerName="DESKTOP-ITKER80"
+  DTS:CreationDate="12/10/2023 5:27:08 AM"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{2EB7556A-6E38-4E7D-8077-00603296C903}"
+  DTS:LastModifiedProductVersion="11.0.2100.60"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Package"
+  DTS:DTSID="{10DBC733-AF39-40B9-98F5-51FB0B683986}"
+  DTS:CreationName="SSIS.Package.3">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ConexionTXT]"
+      DTS:ObjectName="ConexionTXT"
+      DTS:DTSID="{2EF96A50-4810-4B05-9C37-8A0911E3E17B}"
+      DTS:CreationName="FLATFILE">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x003B_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\carol\OneDrive\Escritorio\Teffy\INF-317\SEGUNDO_PARCIAL\DATOS_TXT_4TA_PREGUNTA\datos_1.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RegionID"
+              DTS:DTSID="{0216E319-0C2D-4888-8719-06E7EC64B49E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RegionDescription"
+              DTS:DTSID="{A41BE6CF-489D-4688-A002-8241E348D7B8}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ConexionTXT_Territorio]"
+      DTS:ObjectName="ConexionTXT_Territorio"
+      DTS:DTSID="{4BCB5CEF-1E6C-4F55-B21F-81B0C44ADCCD}"
+      DTS:CreationName="FLATFILE">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x003B_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65000"
+          DTS:ConnectionString="C:\Users\carol\OneDrive\Escritorio\Teffy\INF-317\SEGUNDO_PARCIAL\DATOS_TXT_4TA_PREGUNTA\datos_territorio_1.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TerritoryID"
+              DTS:DTSID="{B3A7DE1D-8489-4B38-BAAD-882716A70E1C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TerritoryDescription"
+              DTS:DTSID="{E8AF37E6-8A4F-47C6-89FF-B00495C05AC6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RegionID"
+              DTS:DTSID="{923A3B82-D918-40D2-AF48-60DEA55087E5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-ITKER80.ReplicaNorth0]"
+      DTS:ObjectName="DESKTOP-ITKER80.ReplicaNorth0"
+      DTS:DTSID="{7D34812A-1E76-4064-ACAD-625FF03BAD63}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-ITKER80;Initial Catalog=ReplicaNorth0;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-ITKER80.ReplicaNorth0 1]"
+      DTS:ObjectName="DESKTOP-ITKER80.ReplicaNorth0 1"
+      DTS:DTSID="{41A31D5B-0375-44DB-AEA7-82C229872FF0}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-ITKER80;Initial Catalog=ReplicaNorth0;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo IMPORTAR TXT REGION"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo IMPORTAR TXT REGION"
+      DTS:DTSID="{DEA4FF58-6304-4371-BD18-EC0266755CF7}"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:CreationName="SSIS.Pipeline.3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION"
+              name="Destino de OLE DB REGION"
+              componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+              description="Destino de OLE DB"
+              usesDispositions="true"
+              version="4"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4">
+              <properties>
+                <property
+                  name="CommandTimeout"
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito.">0</property>
+                <property
+                  name="OpenRowset"
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas.">[dbo].[Region]</property>
+                <property
+                  name="OpenRowsetVariable"
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."></property>
+                <property
+                  name="SqlCommand"
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  name="DefaultCodePage"
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos.">1252</property>
+                <property
+                  name="AlwaysUseDefaultCodePage"
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir caracteres.">true</property>
+                <property
+                  name="AccessMode"
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  typeConverter="AccessMode">0</property>
+                <property
+                  name="FastLoadKeepIdentity"
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Sólo se aplica si está activada la carga rápida.">false</property>
+                <property
+                  name="FastLoadKeepNulls"
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Sólo se aplica si está activada la carga rápida.">false</property>
+                <property
+                  name="FastLoadOptions"
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Sólo se aplica si está activada la carga rápida."></property>
+                <property
+                  name="FastLoadMaxInsertCommitSize"
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Sólo se aplica si está activada la carga rápida.">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Connections[OleDbConnection]"
+                  name="OleDbConnection"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-ITKER80.ReplicaNorth0]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-ITKER80.ReplicaNorth0]" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Inputs[Entrada de destino de OLE DB]"
+                  name="Entrada de destino de OLE DB"
+                  hasSideEffects="true"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Inputs[Entrada de destino de OLE DB].Columns[RegionID]"
+                      lineageId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de origen de archivo plano].Columns[RegionID]"
+                      externalMetadataColumnId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Inputs[Entrada de destino de OLE DB].ExternalColumns[RegionID]"
+                      cachedName="RegionID"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedCodepage="65001" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Inputs[Entrada de destino de OLE DB].Columns[RegionDescription]"
+                      lineageId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de origen de archivo plano].Columns[RegionDescription]"
+                      externalMetadataColumnId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Inputs[Entrada de destino de OLE DB].ExternalColumns[RegionDescription]"
+                      cachedName="RegionDescription"
+                      cachedDataType="wstr"
+                      cachedLength="50" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Inputs[Entrada de destino de OLE DB].ExternalColumns[RegionID]"
+                      name="RegionID"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Inputs[Entrada de destino de OLE DB].ExternalColumns[RegionDescription]"
+                      name="RegionDescription"
+                      dataType="wstr"
+                      length="50" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Outputs[Salida de error de destino de OLE DB]"
+                  name="Salida de error de destino de OLE DB"
+                  exclusionGroup="1"
+                  synchronousInputId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Inputs[Entrada de destino de OLE DB]"
+                  isErrorOut="true">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      lineageId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      lineageId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION"
+              name="IMPORTAR TXT REGION"
+              componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
+              description="Origen de archivo plano"
+              localeId="3082"
+              usesDispositions="true"
+              version="1"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1">
+              <properties>
+                <property
+                  name="RetainNulls"
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL.">false</property>
+                <property
+                  name="FileNameColumnName"
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Connections[FlatFileConnection]"
+                  name="FlatFileConnection"
+                  connectionManagerID="Package.ConnectionManagers[ConexionTXT]"
+                  connectionManagerRefId="Package.ConnectionManagers[ConexionTXT]" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de origen de archivo plano].Columns[RegionID]"
+                      name="RegionID"
+                      lineageId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de origen de archivo plano].Columns[RegionID]"
+                      length="50"
+                      dataType="str"
+                      codePage="65001"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de origen de archivo plano].ExternalColumns[RegionID]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de origen de archivo plano].Columns[RegionDescription]"
+                      name="RegionDescription"
+                      lineageId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de origen de archivo plano].Columns[RegionDescription]"
+                      length="50"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de origen de archivo plano].ExternalColumns[RegionDescription]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario.">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de origen de archivo plano].ExternalColumns[RegionID]"
+                      name="RegionID"
+                      dataType="str"
+                      length="50"
+                      codePage="65001" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de origen de archivo plano].ExternalColumns[RegionDescription]"
+                      name="RegionDescription"
+                      dataType="wstr"
+                      length="50" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de error de origen de archivo plano]"
+                  name="Salida de error de origen de archivo plano"
+                  isErrorOut="true">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      dataType="text"
+                      codePage="65001" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      lineageId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      lineageId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tarea Flujo IMPORTAR TXT REGION.Paths[Salida de origen de archivo plano]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION.Outputs[Salida de origen de archivo plano]"
+              endId="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION.Inputs[Entrada de destino de OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="sql11">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="249,42"
+          Id="Package\Tarea Flujo IMPORTAR TXT REGION"
+          TopLeft="195,127" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Tarea Flujo IMPORTAR TXT REGION">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Tarea Flujo IMPORTAR TXT REGION\IMPORTAR TXT REGION"
+          TopLeft="173,64" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION"
+          TopLeft="165,225" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo IMPORTAR TXT REGION.Paths[Salida de origen de archivo plano]"
+          TopLeft="269.5,106">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,119"
+              Start="0,0"
+              End="0,111.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,111.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo IMPORTAR TXT REGION\Destino de OLE DB REGION">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
