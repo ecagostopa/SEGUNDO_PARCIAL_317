@@ -1,0 +1,15 @@
+﻿TerritoryID;TerritoryDescription;RegionID
+0;Kansas;5
+1;New York;5
+2;Kansas;6
+3;New York;7
+4;Kansas;8
+5;New York;9
+6;Kansas;6
+7;New York;6
+8;Kansas;8
+9;New York;8
+10;Kansas;8
+11;New York;9
+12;Kansas;6
+13;New York;6

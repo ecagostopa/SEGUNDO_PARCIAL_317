@@ -1,0 +1,6 @@
+﻿RegionID;RegionDescription
+5;Zona Sur
+6;Zona Norte
+7;Zona Central
+8;Zona Este
+9;Zona Oeste
