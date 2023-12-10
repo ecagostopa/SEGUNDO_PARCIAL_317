@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<DTS:Executable
+  DTS:refId="Package" xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:CreatorName="DESKTOP-ITKER80\carol"
+  DTS:CreatorComputerName="DESKTOP-ITKER80"
+  DTS:CreationDate="12/9/2023 9:47:40 AM"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{91265039-6605-47AD-8B29-35CCEF5006A5}"
+  DTS:LastModifiedProductVersion="11.0.2100.60"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Package"
+  DTS:DTSID="{E579674F-2969-429C-8A14-45FBF8C7F748}"
+  DTS:CreationName="SSIS.Package.3">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[(localhost).ReplicaNorth0]"
+      DTS:ObjectName="(localhost).ReplicaNorth0"
+      DTS:DTSID="{29C2D80D-2AD6-4F65-BCB5-35952CA88AD5}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=(localhost);Initial Catalog=ReplicaNorth0;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[(localhost).ReplicaNorth0.sa1]"
+      DTS:ObjectName="(localhost).ReplicaNorth0.sa1"
+      DTS:DTSID="{EC81B730-A2F0-483F-A003-4B4753B2255D}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=(localhost);User ID=sa;Initial Catalog=ReplicaNorth0;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA5tooWRukEmZVZUKZX54twAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADcWc2aiz5FY30+v1qps9ZQ+9wp7+1OhsHbAfJ9K9TujQAAAAAOgAAAAAIAACAAAAABKYkmxblyg/P6qPpuBVNrUsA+JQ34PkkYqwYkwppKHxAAAADO63JOodbO9mzc+2pbSXYpQAAAACIU+gE0fHtREKVTJKVgP7Udki5dYhhRy2Ti48nM7MIvCRgv4beJqTqGW0bWeCKp8ebOp62SHPmJ1WT6x+nNOO0</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[(localhost).ReplicaNorth0.sa1 1]"
+      DTS:ObjectName="(localhost).ReplicaNorth0.sa1 1"
+      DTS:DTSID="{1AA0C486-212D-41D4-9457-DF3AFB1FF72B}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=(localhost);User ID=sa;Initial Catalog=ReplicaNorth0;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA5tooWRukEmZVZUKZX54twAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADBgE3MObPKSXaobXqmrX09/cXCp+paj8yV4R6K6e4/AgAAAAAOgAAAAAIAACAAAAAvYxkgBFxGmmQTJ80/Y6CEio38gK3MjnxDINMKjLDi4hAAAACo3iyVUE6NlviB/G3sy56uQAAAAHAgkO1ltmm8a0CE6eY4wX0TUoSs/ks+lQaOAqqyz2wWhVyPiPQ5tIvi/RRkK6p/bVB9R13yPnTn5ceVvF4BrkA</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[(localhost).ReplicaNorth0.sa1 2]"
+      DTS:ObjectName="(localhost).ReplicaNorth0.sa1 2"
+      DTS:DTSID="{711B3C59-F750-468C-AB3A-94D233FFB180}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=(localhost);User ID=sa;Initial Catalog=ReplicaNorth0;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA5tooWRukEmZVZUKZX54twAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADK8Qm+ckVHXpxLvP/w19KodfjG/OiDDZugrxNc9UK/uAAAAAAOgAAAAAIAACAAAABfPA1O6CQ/sv0zMKmSWQTPi4o9wBjs2J655oHgomjuiBAAAABmKXfgTnkN9Ubli7tjoZLkQAAAAAN+Ge8Y30p640UHdB+HCpMqGtWamOjX/Fiw5MXsgW8voAbSviiPHYpR2HbVfMSwMeVzcSz/iLwJ8ggfoLlMORI</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[(localhost).Replica_North0.sa]"
+      DTS:ObjectName="(localhost).Replica_North0.sa"
+      DTS:DTSID="{4748EC3B-4F46-4F27-96C1-61481D0420B4}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=(localhost);User ID=sa;Initial Catalog=Replica_North0;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA5tooWRukEmZVZUKZX54twAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAE7Xb1wurFHR13ZrRWmvvsx3B7rpjIvl5CW668Omci+wAAAAAOgAAAAAIAACAAAACi3ukiJDJiHC2JfTVZdt1s/zmRW59nBGxaOZxPfov4ExAAAADzwLfRnGWqXf0YmlAd38hMQAAAAD/ILfXRgK7/dXCw2ACJv+XDcRFdFORLcxO9EmJV11WqtdjwabOFBU6jhxsLsN3qfiERlGQ7MgDQz+Zm9SVVIwI</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-ITKER80.ReplicaNorth0]"
+      DTS:ObjectName="DESKTOP-ITKER80.ReplicaNorth0"
+      DTS:DTSID="{1D77165A-500A-45A4-9B40-80D071B48EB5}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-ITKER80;Initial Catalog=ReplicaNorth0;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-ITKER80.ReplicaNorth0 1]"
+      DTS:ObjectName="DESKTOP-ITKER80.ReplicaNorth0 1"
+      DTS:DTSID="{8BB84681-1A2A-499F-A902-163984DAFF54}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-ITKER80;Initial Catalog=ReplicaNorth0;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\ACTUALIZAR TABLA REGION"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:ThreadHint="0"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ACTUALIZAR TABLA REGION"
+      DTS:DTSID="{226C2A73-1087-40E8-B395-854B244F81F5}"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1D77165A-500A-45A4-9B40-80D071B48EB5}"
+          SQLTask:SqlStatementSource="UPDATE Region&#xA;SET RegionID = 0,&#xA;    RegionDescription = 'ESTE'&#xA;WHERE RegionID = 1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ACTUALIZAR TABLA TERRITORIES"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:ThreadHint="0"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ACTUALIZAR TABLA TERRITORIES"
+      DTS:DTSID="{2CF16689-BA05-4DA7-AD7B-95A535A3A908}"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{8BB84681-1A2A-499F-A902-163984DAFF54}"
+          SQLTask:SqlStatementSource="UPDATE Territories&#xA;SET RegionID = (SELECT RegionID FROM Region WHERE RegionDescription = 'ESTE')&#xA;WHERE RegionID=1;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SI INTRODUCEN NULL"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:ThreadHint="1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SI INTRODUCEN NULL"
+      DTS:DTSID="{A926D2E3-49AD-4A69-9CC9-7FB3E5865DF0}"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1D77165A-500A-45A4-9B40-80D071B48EB5}"
+          SQLTask:SqlStatementSource="UPDATE Region&#xA;SET RegionDescription = 'ESTE'&#xA;WHERE  RegionID = 0 " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:From="Package\ACTUALIZAR TABLA REGION"
+      DTS:To="Package\ACTUALIZAR TABLA TERRITORIES"
+      DTS:Value="2"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:DTSID="{F07EBE89-DFC2-4320-9F09-ED6F01BBC87C}"
+      DTS:CreationName="" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:From="Package\ACTUALIZAR TABLA REGION"
+      DTS:To="Package\SI INTRODUCEN NULL"
+      DTS:Value="1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:DTSID="{1ECF1F43-402D-4958-8C46-78E46F40A600}"
+      DTS:CreationName="" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="sql11">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="214,42"
+          Id="Package\ACTUALIZAR TABLA REGION"
+          TopLeft="152,86" />
+        <NodeLayout
+          Size="242,42"
+          Id="Package\ACTUALIZAR TABLA TERRITORIES"
+          TopLeft="143,232" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="261.5,128">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,104"
+              Start="0,0"
+              End="0,96.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,96.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-24.154453125,43.08251953125,48.30890625,10.3349609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="185,42"
+          Id="Package\SI INTRODUCEN NULL"
+          TopLeft="473,145" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="366,107">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="107,59"
+              Start="0,0"
+              End="99.5,59">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="49.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="49.5,0"
+                    Point2="53.5,0"
+                    Point3="53.5,4" />
+                  <mssgle:LineSegment
+                    End="53.5,55" />
+                  <mssgle:CubicBezierSegment
+                    Point1="53.5,55"
+                    Point2="53.5,59"
+                    Point3="57.5,59" />
+                  <mssgle:LineSegment
+                    End="99.5,59" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="41.97130859375,-15.421875,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

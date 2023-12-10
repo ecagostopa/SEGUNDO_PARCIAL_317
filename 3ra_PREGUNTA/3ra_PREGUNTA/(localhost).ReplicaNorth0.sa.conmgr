@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="(localhost).ReplicaNorth0.sa"
+  DTS:DTSID="{B18DE750-E788-4C24-926A-F8731ADFD765}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-ITKER80;User ID=sa;Initial Catalog=ReplicaNorth0;Persist Security Info=True;Application Name=SSIS-3ra_PREGUNTA-{B18DE750-E788-4C24-926A-F8731ADFD765}(localhost).ReplicaNorth0.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA5tooWRukEmZVZUKZX54twAAAAACAAAAAAAQZgAAAAEAACAAAABbG75E9oaHTjZhOyIOrRdm63QGQEZZsQUPllYha8iAKgAAAAAOgAAAAAIAACAAAADGPurjCNF0rAsP7ZguM3aT4YQ1oOP7mvoM3WlZpHLRNnAAAAAyqcMRcZ3WG59y3rC9gVKoQHe74xBgnLpvKEzmTrPD5t7u/hCTuqI43hyWhO7bAVNbwMas/q7tFljca5IXwUONb/4Fz2p/uR1tYVwvLFS51BnBw+Gh6aUGnD4ei8rGZKJziXSmviYiIMPu5d9s1XxpQAAAABaPg+694/FmjVvX54rpWb/1XAZS9p3b0ldoePZ+lQWn+9EBZe7i9Rmysbp+a8ZjyTG0nRCweXu/Wt2dmLOlRgQ=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
